@@ -22,11 +22,11 @@ To develop practical SOC skills including threat detection, incident response, a
 
 ## 🚨 Incident Reports
 
-| ID | Category | Severity | Status |
-|----|----------|----------|--------|
-| SOC165 | Web Attack | 🔴 High | ✅ Completed |
-| SOC166 | Web Attack | 🟠 Medium | ✅ Completed |
-| SOC282 | Phishing | 🟠 Medium | ✅ Completed |
+| ID | Category | Severity | Description | Status |
+|----|----------|----------|-------------|--------|
+| SOC165 | Web Attack | 🔴 High | SQL Injection Attempt | ✅ Completed |
+| SOC166 | Web Attack | 🟠 Medium | Javascript Code in URL | ✅ Completed |
+| SOC282 | Phishing | 🟠 Medium | Deceptive Email (Phishing) | ✅ Completed |
 
 ---
 
