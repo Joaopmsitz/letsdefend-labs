@@ -1,4 +1,3 @@
-# letsdefend-labs
 # 🛡️ SOC Analyst Portfolio - Let's Defend
 
 This repository documents my hands-on experience investigating cybersecurity incidents using the Let's Defend platform.
