@@ -80,4 +80,13 @@ Immediate containment actions are required.
 
 - Avoid opening unknown attachments  
 - Verify sender legitimacy  
-- Monitor outbound connections for suspicious activity  
+- Monitor outbound connections for suspicious activity
+
+---
+
+- ## 🔗 Indicators of Compromise (IOCs)
+
+- SMTP IP: 103.80.134.63  
+- Suspicious domain: coffeeshoop.com  
+- Malicious attachment: free-coffee.zip  
+- C2 IP: 37.120.233.226  
