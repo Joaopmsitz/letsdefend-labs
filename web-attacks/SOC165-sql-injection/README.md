@@ -17,30 +17,35 @@ Um alerta de alta severidade foi gerado indicando uma possível tentativa de SQL
 
 ## 🔍 Investigation
 
-The investigation began by reviewing the alert details and associated HTTP request logs.
+The investigation began by analyzing the HTTP request logs associated with the alert.
 
-Key information analyzed:
-- Source IP address  
-- Requested URL  
-- HTTP response status  
-
-A suspicious payload was identified in the request URL. The payload contained common SQL Injection patterns such as:
+A suspicious payload was identified in the request:
 
 ```
 ' OR 1=1 --
 ```
 
-This type of payload is typically used to bypass authentication mechanisms.
+This payload is commonly used to manipulate SQL queries and bypass authentication mechanisms.
 
-The repeated requests from the same source IP indicated multiple attack attempts.
+Further analysis indicated that the request targeted a login endpoint.
+
+Multiple requests with similar payloads were observed, suggesting repeated attack attempts.
 
 ---
 
 ## 🚨 Findings
 
-- Malicious SQL payload detected  
-- Multiple request attempts observed  
+- SQL Injection payload detected  
 - Attempt to bypass authentication  
+- Repeated malicious requests observed  
+
+---
+
+## 🔗 Indicators of Compromise (IOCs)
+
+- Suspicious payload: ' OR 1=1 --  
+- Attack type: SQL Injection  
+- Target: Web login endpoint  
 
 ---
 
@@ -61,13 +66,12 @@ The repeated requests from the same source IP indicated multiple attack attempts
 
 The alert represents a confirmed SQL Injection attempt.
 
-After analyzing the HTTP response status, no evidence of successful exploitation was found.  
-The attack was unsuccessful.
+No changes in HTTP response status were observed, indicating that the attack was unsuccessful.
 
 ---
 
 ## 📚 Lessons Learned
 
 - Importance of input validation  
-- Monitoring repeated requests from same IP  
+- Monitoring repeated requests  
 - Detecting SQL patterns in web logs  
