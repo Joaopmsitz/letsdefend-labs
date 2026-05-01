@@ -27,9 +27,11 @@ A suspicious payload was identified in the request:
 
 This payload is commonly used to manipulate SQL queries and bypass authentication mechanisms.
 
-Further analysis indicated that the request targeted a login endpoint.
+The attacker attempted to bypass authentication by injecting malicious SQL code into a web application's input field.
 
-Multiple requests with similar payloads were observed, suggesting repeated attack attempts.
+Further analysis indicated that the request was targeting a web application's login endpoint.
+
+Multiple requests with similar payloads were observed, suggesting repeated or automated attack attempts.
 
 ---
 
@@ -44,8 +46,8 @@ Multiple requests with similar payloads were observed, suggesting repeated attac
 ## 🔗 Indicators of Compromise (IOCs)
 
 - Suspicious payload: ' OR 1=1 --  
-- Attack type: SQL Injection  
-- Target: Web login endpoint  
+- Technique: SQL Injection (Authentication Bypass)  
+- Target: Web application login endpoint  
 
 ---
 
@@ -73,5 +75,5 @@ No changes in HTTP response status were observed, indicating that the attack was
 ## 📚 Lessons Learned
 
 - Importance of input validation  
-- Monitoring repeated requests  
+- Monitoring repeated malicious requests  
 - Detecting SQL patterns in web logs  
