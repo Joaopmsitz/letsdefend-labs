@@ -58,6 +58,15 @@ This indicates that the system was likely compromised.
 
 ---
 
+- ## 🔗 Indicators of Compromise (IOCs)
+
+- SMTP IP: 103.80.134.63  
+- Suspicious domain: coffeeshoop.com  
+- Malicious attachment: free-coffee.zip  
+- C2 IP: 37.120.233.226
+
+---
+
 ## 🛠️ Tools Used
 
 - SIEM (Let's Defend platform)  
@@ -82,11 +91,4 @@ Immediate containment actions are required.
 - Verify sender legitimacy  
 - Monitor outbound connections for suspicious activity
 
----
 
-- ## 🔗 Indicators of Compromise (IOCs)
-
-- SMTP IP: 103.80.134.63  
-- Suspicious domain: coffeeshoop.com  
-- Malicious attachment: free-coffee.zip  
-- C2 IP: 37.120.233.226  
