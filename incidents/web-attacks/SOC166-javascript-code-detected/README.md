@@ -1,47 +1,49 @@
-# 🚨 Incident Report: Javascript Code Detected in URL (SOC166)
+# 🚨 SOC166 - JavaScript Code Detected in URL
 
 ## 📌 Summary
-A medium severity alert was triggered indicating suspicious JavaScript code embedded in a URL, suggesting a potential cross-site scripting (XSS) attempt.
 
-## 📌 Resumo (Português)
-Um alerta de severidade média foi gerado indicando código JavaScript suspeito em uma URL, sugerindo uma possível tentativa de ataque XSS.
+A medium-severity alert was triggered indicating suspicious JavaScript code embedded in a URL, suggesting a potential Cross-Site Scripting (XSS) attempt.
 
 ---
 
 ## 🧾 Alert Details
+
 - **Incident ID:** SOC166  
 - **Category:** Web Attack  
 - **Severity:** Medium  
+- **Attack Type:** Cross-Site Scripting (XSS)  
 
 ---
 
-## 🔍 Investigation
+## 🔍 Detection & Analysis
 
-The investigation began by analyzing the HTTP request associated with the alert.
+The investigation began with analysis of an HTTP request containing a suspicious encoded payload in the URL.
 
-A suspicious URL was identified containing encoded JavaScript code.
+A JavaScript-based payload was identified, similar to:
+**<script>alert(1)</script>**
 
-This type of behavior is commonly associated with cross-site scripting (XSS) attacks, where attackers attempt to inject malicious scripts into web applications.
 
-The payload appeared to include JavaScript functions intended to execute in the victim's browser.
+### Observations:
 
-Further analysis suggested that the attack was targeting a web application's input field, aiming to execute client-side code.
-
-No evidence of successful script execution or abnormal responses was observed during log analysis.
+- Encoded JavaScript detected in URL  
+- Attempt to inject client-side script  
+- Targeted web application input field  
+- No evidence of sanitization on input observed  
 
 ---
 
 ## 🚨 Findings
 
-- Suspicious JavaScript code detected in URL  
+- Suspicious JavaScript payload detected  
 - Possible XSS attack attempt  
-- No evidence of successful exploitation  
+- No evidence of successful execution  
+- No abnormal response behavior observed  
 
 ---
 
 ## 🔗 Indicators of Compromise (IOCs)
 
-- Suspicious pattern: JavaScript code embedded in URL  
+- Payload: Encoded JavaScript in URL  
 - Technique: Cross-Site Scripting (XSS)  
 - Target: Web application input field  
 
@@ -49,30 +51,23 @@ No evidence of successful script execution or abnormal responses was observed du
 
 ## 🧠 MITRE ATT&CK Mapping
 
-- **T1059.007** – JavaScript  
-- **T1189** – Drive-by Compromise  
+- T1059.007 – JavaScript Execution  
+- T1059 – Command and Scripting Interpreter  
 
 ---
 
-## 🛠️ Tools Used
+## 🛠️ Response
 
-- SIEM (Let's Defend platform)  
-- Log analysis  
-
----
-
-## ✅ Conclusion
-
-The alert represents a potential XSS attack attempt.
-
-Although malicious JavaScript code was identified in the request, no evidence of successful execution was observed.
-
-The attack was unsuccessful.
+- Attack classified as True Positive attempt  
+- No successful exploitation confirmed  
+- Input validation recommended  
 
 ---
 
-## 📚 Lessons Learned
+## 📚 Conclusion
 
-- Validate and sanitize user inputs  
-- Detect encoded or obfuscated scripts in URLs  
-- Monitor web traffic for client-side attack patterns  
+This incident represents a potential XSS attack attempt through JavaScript injection in a URL. The attack was detected and did not result in successful execution.
+
+---
+
+⭐ SOC investigation completed following detection → analysis → validation → response workflow.
