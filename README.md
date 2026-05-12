@@ -2,21 +2,24 @@
 
 This repository documents my hands-on experience investigating cybersecurity incidents using the Let's Defend platform.
 
-## 📌 Versão em Português
-Este repositório documenta minha experiência prática investigando incidentes de segurança na plataforma Let's Defend.
-
 ---
 
 ## 🎯 Objective
-To develop practical SOC skills including threat detection, incident response, and log analysis.
+
+To develop practical SOC Analyst skills including threat detection, incident response, log analysis, and security monitoring across real-world simulated environments.
+
+---
 
 ## 🧠 Skills Demonstrated
+
 - SIEM alert investigation  
-- Phishing analysis  
-- Web attack detection  
-- Log correlation  
-- Incident classification  
+- Malware analysis  
+- Phishing email analysis  
+- Web attack detection (SQLi, injection attempts)  
+- Log correlation and network traffic analysis  
+- Incident classification (True Positive / False Positive)  
 - MITRE ATT&CK mapping  
+- Basic incident response and containment  
 
 ---
 
@@ -24,32 +27,69 @@ To develop practical SOC skills including threat detection, incident response, a
 
 | ID | Category | Severity | Description | Status |
 |----|----------|----------|-------------|--------|
-| SOC165 | Web Attack | 🔴 High | SQL Injection Attempt | ✅ Completed |
-| SOC166 | Web Attack | 🟠 Medium | Javascript Code in URL | ✅ Completed |
-| SOC282 | Phishing | 🟠 Medium | Deceptive Email (Phishing) | ✅ Completed |
+| SOC138 | Malware | 🟠 Medium | Suspicious XLS File Execution | ✅ Completed |
+| SOC165 | Web Attack | 🔴 High | Possible SQL Injection Attempt | ✅ Completed |
+| SOC166 | Web Attack | 🟠 Medium | JavaScript Code Detected in URL | ✅ Completed |
+| SOC282 | Phishing | 🟠 Medium | Deceptive Email Detected | ✅ Completed |
 
 ---
 
-## 📂 Structure
-- 📧 phishing-incidents/
-- 🌐 web-attacks/
-- 📊 siem-analysis/
-- 🦠 malware-analysis/
+## 📂 Repository Structure
+
+- 📁 incidents/malware  
+- 📁 incidents/phishing  
+- 📁 incidents/web-attacks  
+
+Each incident contains a structured SOC report including:
+- Detection details  
+- Investigation steps  
+- Evidence analysis  
+- MITRE ATT&CK mapping  
+- Response actions  
+- Final conclusion  
 
 ---
 
-## 🏅 Achievements
-- SOC Member  
-- Phishing Expert  
-- SIEM 101  
-- Web Attack Investigator  
-- Malware Analyzer  
-- MITRE ATT&CK  
-- Cyber Kill Chain  
-- Web Hunter  
-- First Blood  
-- 10 Day Streak  
+## 🧾 Key SOC Scenarios Covered
+
+- Malware delivery via Excel (.XLS) files  
+- Phishing campaigns using deceptive emails  
+- SQL Injection attempts against web applications  
+- JavaScript injection in malicious URLs  
+- Command-and-Control (C2) communication analysis  
 
 ---
 
-🚀 Continuously improving SOC and Blue Team skills.
+## 🧠 Training Progress (Let's Defend Platform)
+
+- SOC Monitoring & Alert Investigation  
+- Phishing Analysis & Email Security  
+- Web Application Attack Detection  
+- Malware Behavior Analysis  
+- Incident Response Workflow  
+- MITRE ATT&CK Framework Application  
+
+---
+
+## 🚧 Response Capabilities Demonstrated
+
+- Alert triage and prioritization  
+- Threat validation (True Positive analysis)  
+- Network traffic inspection  
+- Endpoint compromise identification  
+- Host containment decisions  
+- Security incident reporting  
+
+---
+
+## 🚀 Objective Going Forward
+
+- Strengthen SOC Tier 1–2 analytical skills  
+- Improve threat detection speed and accuracy  
+- Expand incident correlation techniques  
+- Deepen MITRE ATT&CK mapping knowledge  
+- Prepare for real-world SOC Analyst roles  
+
+---
+
+⭐ Continuously improving cybersecurity and Blue Team capabilities.
