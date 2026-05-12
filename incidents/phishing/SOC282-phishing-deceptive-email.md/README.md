@@ -1,14 +1,13 @@
-# 🚨 Incident Report: Phishing Email Detected (SOC282)
+# 🚨 SOC282 - Phishing Email Detected
 
 ## 📌 Summary
-A medium severity alert was triggered indicating a phishing email containing a malicious attachment.
 
-## 📌 Resumo (Português)
-Um alerta de severidade média foi gerado indicando um e-mail de phishing contendo um anexo malicioso.
+A medium-severity alert was triggered indicating a phishing email containing a malicious attachment designed for payload delivery.
 
 ---
 
 ## 🧾 Alert Details
+
 - **Incident ID:** SOC282  
 - **Category:** Phishing  
 - **Severity:** Medium  
@@ -21,72 +20,67 @@ Um alerta de severidade média foi gerado indicando um e-mail de phishing conten
 
 ## 🔍 Investigation
 
-The investigation started by analyzing the email metadata and content.
+The investigation focused on email metadata, attachment analysis, and endpoint activity.
 
-Key observations:
-- Suspicious sender domain (possible spoofing)  
-- Email subject designed to attract attention (social engineering)  
-- Presence of a compressed attachment: `free-coffee.zip`  
+### Key Findings:
 
-The email was successfully delivered to the user, indicating that it bypassed email security controls.
-
-The attachment was analyzed and identified as malicious. It contained an executable file that could compromise the system.
-
-Further log analysis confirmed that the file was executed on the user's machine.
-
-Additionally, network activity revealed communication with an external command-and-control (C2) server:
-
-- **C2 IP:** 37.120.233.226  
-
-This behavior strongly indicates post-exploitation activity and system compromise.
+- Suspicious sender domain indicating possible spoofing  
+- Social engineering technique using “free voucher” lure  
+- Malicious attachment: `free-coffee.zip`  
+- Attachment contained executable payload  
+- Execution confirmed on the target machine  
+- Outbound communication detected after execution  
 
 ---
 
-## 🚨 Findings
+## 🌐 Network Activity
 
-- Phishing email successfully delivered  
-- Malicious attachment executed  
-- Connection established with external C2 server  
-- High likelihood of system compromise  
+- C2 IP: 37.120.233.226  
+
+This indicates post-exploitation communication with an external command-and-control server.
+
+---
+
+## 🚨 Impact
+
+- Successful phishing delivery  
+- Malicious payload executed  
+- Host compromise likely  
+- External C2 communication established  
 
 ---
 
 ## 🔗 Indicators of Compromise (IOCs)
 
 - SMTP IP: 103.80.134.63  
-- Suspicious domain: coffeeshoop.com  
-- Malicious file: free-coffee.zip  
+- Domain: coffeeshoop.com  
+- File: free-coffee.zip  
 - C2 IP: 37.120.233.226  
 
 ---
 
 ## 🧠 MITRE ATT&CK Mapping
 
-- **T1566** – Phishing  
-- **T1204** – User Execution  
+- T1566 – Phishing  
+- T1204 – User Execution  
+- T1105 – Ingress Tool Transfer  
+- T1071 – Application Layer Protocol  
 
 ---
 
-## 🛠️ Tools Used
+## 🛠️ Response Actions
 
-- SIEM (Let's Defend platform)  
-- Email analysis  
-- Log analysis  
-
----
-
-## ✅ Conclusion
-
-The alert represents a confirmed phishing attack (True Positive).
-
-The execution of the malicious attachment and communication with a C2 server indicate a successful compromise of the host.
-
-Immediate containment actions should be taken to isolate the affected system and prevent further damage.
+- Incident classified as True Positive  
+- Affected host should be isolated (if not already contained)  
+- Network indicators should be blocked  
+- Further forensic analysis recommended  
 
 ---
 
-## 📚 Lessons Learned
+## 📚 Conclusion
 
-- Avoid opening attachments from unknown senders  
-- Verify sender legitimacy before interacting with emails  
-- Monitor outbound connections for suspicious activity 
+This incident represents a successful phishing attack resulting in malware execution and suspected system compromise via C2 communication.
+
+---
+
+⭐ SOC investigation completed following detection → analysis → impact assessment → response workflow.
