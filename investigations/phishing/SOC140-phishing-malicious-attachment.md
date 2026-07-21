@@ -4,11 +4,13 @@
 
 A phishing email alert was generated after a malicious email containing a suspicious attachment was delivered to an internal user. The investigation focused on validating the email, analyzing the attachment, and determining whether endpoint compromise occurred.
 
+---
+
 ## 🧾 Alert Details
 
 | Field | Value |
 |---------|---------|
-| Incident ID | SOC140 |
+| Alert ID | SOC140 |
 | Event ID | 82 |
 | Category | Phishing |
 | Sender | aaronluo@cmail.carleton.ca |
@@ -60,13 +62,15 @@ A phishing email alert was generated after a malicious email containing a suspic
 - Validated attachment behavior in sandbox
 - Verified no execution occurred on the endpoint
 - Reviewed related network activity
-- Classified incident as True Positive
+- Classified alert as True Positive
 
 ---
 
 ## 📚 Conclusion
 
-The investigation confirmed that the email contained a malicious attachment and represented a legitimate phishing attempt. However, no evidence indicated that the attachment was executed or that the endpoint was compromised.
+The investigation confirmed that the email contained a malicious attachment and represented a genuine phishing attempt.
+
+Although the attachment was identified as malicious through sandbox analysis, no evidence indicated that the file was executed or that the endpoint was compromised.
 
 ### ✅ Final Verdict
 
@@ -75,3 +79,9 @@ The investigation confirmed that the email contained a malicious attachment and 
 ### 🎯 Classification
 
 **Phishing Email / Malicious Attachment**
+
+---
+
+⭐ SOC investigation completed following the workflow:
+
+**Detection → Analysis → Threat Validation → Response**
