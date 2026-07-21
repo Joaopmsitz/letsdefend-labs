@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Portfolio - Let's Defend
 
-This repository documents my hands-on experience investigating cybersecurity incidents using the Let's Defend platform.
+This repository documents my hands-on experience investigating security alerts and potential incidents using the Let's Defend platform.
 
 ---
 
@@ -10,27 +10,16 @@ To develop practical SOC Analyst skills including threat detection, incident res
 
 ---
 
-## 📊 Portfolio Statistics
-
-- Total Incidents Investigated: 5
-- Malware Investigations: 2
-- Web Attack Investigations: 2
-- Phishing Investigations: 1
-- True Positives: 4
-- False Positives: 1
-
----
-
 ## 🧠 Skills Demonstrated
 
 - SIEM alert investigation
 - Malware analysis
-- Phishing email analysis
+- Phishing analysis
 - Web attack detection
 - Log correlation
 - Network traffic analysis
 - Threat intelligence validation
-- Incident classification (True Positive / False Positive)
+- Alert classification (True Positive / False Positive)
 - MITRE ATT&CK mapping
 - Incident response processes
 
@@ -39,13 +28,13 @@ To develop practical SOC Analyst skills including threat detection, incident res
 ## 📂 Repository Structure
 
 ```text
-incidents/
+investigations/
 ├── malware/
 ├── phishing/
 └── web-attacks/
 ```
 
-Each incident report includes:
+Each investigation report includes:
 
 - Alert summary
 - Investigation process
@@ -59,21 +48,28 @@ Each incident report includes:
 
 ## 🧾 Key Scenarios Covered
 
-### Malware
+### 🦠 Malware
+
 - Suspicious XLS file execution
 - Malware detection validation
-- False positive analysis
 - File reputation investigation
+- Sandbox analysis
+- False positive determination
 
-### Phishing
-- Email-based social engineering
-- Suspicious sender validation
-- Email artifact analysis
+### 🎣 Phishing
 
-### Web Attacks
+- Malicious email attachments
+- URL-based phishing attacks
+- Social engineering campaigns
+- Sender reputation validation
+- Payload delivery analysis
+
+### 🌐 Web Attacks
+
 - SQL Injection attempts
 - JavaScript injection activity
-- Web log analysis
+- Web application attack analysis
+- HTTP log review
 
 ---
 
@@ -96,8 +92,22 @@ Each incident report includes:
 - IOC analysis
 - Network investigation
 - Endpoint investigation
+- Phishing analysis
+- Malware investigation
 - False positive identification
 - Security incident reporting
+
+---
+
+## ✅ Investigation Outcomes
+
+The investigations contained in this repository include:
+
+- Confirmed malicious activity (True Positive)
+- False Positive analysis
+- Benign activity validation
+- Threat intelligence correlation
+- Malware and phishing investigations
 
 ---
 
@@ -108,7 +118,21 @@ Each incident report includes:
 - Expanding investigation methodologies
 - Enhancing MITRE ATT&CK knowledge
 - Building practical Blue Team experience
+- Developing structured investigation workflows
 
 ---
 
-⭐ Continuously improving cybersecurity and Blue Team capabilities through hands-on incident investigations.
+## 🎯 Goal
+
+Build practical experience in:
+
+- Security Monitoring
+- Threat Detection
+- Incident Investigation
+- Malware Analysis
+- Phishing Analysis
+- Blue Team Operations
+
+---
+
+⭐ Continuously improving cybersecurity and Blue Team capabilities through hands-on security investigations.
