@@ -1,12 +1,8 @@
 # 🛡️ SOC Analyst Portfolio - Let's Defend
 
-This repository documents my hands-on experience investigating security alerts and potential incidents using the Let's Defend platform.
+This repository contains security investigations performed during hands-on SOC Analyst training on the Let's Defend platform.
 
----
-
-## 🎯 Objective
-
-To develop practical SOC Analyst skills including threat detection, incident response, log analysis, and security monitoring across realistic simulated environments.
+The reports document the analysis of security alerts, threat validation, evidence collection, and final investigation outcomes.
 
 ---
 
@@ -19,9 +15,9 @@ To develop practical SOC Analyst skills including threat detection, incident res
 - Log correlation
 - Network traffic analysis
 - Threat intelligence validation
-- Alert classification (True Positive / False Positive)
+- IOC identification
 - MITRE ATT&CK mapping
-- Incident response processes
+- Alert classification (True Positive / False Positive)
 
 ---
 
@@ -34,105 +30,43 @@ investigations/
 └── web-attacks/
 ```
 
-Each investigation report includes:
+Each investigation includes:
 
-- Alert summary
-- Investigation process
+- Alert details
+- Investigation methodology
 - Evidence analysis
-- Indicators reviewed
+- Indicators of Compromise (IOCs)
 - MITRE ATT&CK mapping
 - Response actions
 - Final verdict
 
 ---
 
-## 🧾 Key Scenarios Covered
+## 🧾 Investigation Categories
 
 ### 🦠 Malware
 
-- Suspicious XLS file execution
-- Malware detection validation
-- File reputation investigation
+- Suspicious file execution
+- Malware validation
 - Sandbox analysis
-- False positive determination
+- File reputation analysis
+- False Positive investigations
 
 ### 🎣 Phishing
 
-- Malicious email attachments
-- URL-based phishing attacks
-- Social engineering campaigns
-- Sender reputation validation
-- Payload delivery analysis
+- Malicious email analysis
+- Phishing URLs
+- Malicious attachments
+- Social engineering attacks
+- Payload delivery investigations
 
 ### 🌐 Web Attacks
 
 - SQL Injection attempts
-- JavaScript injection activity
-- Web application attack analysis
-- HTTP log review
+- Cross-Site Scripting (XSS)
+- Malicious URL analysis
+- HTTP request inspection
 
 ---
 
-## 🧠 Training Areas
-
-- SOC Monitoring & Alert Investigation
-- Malware Analysis
-- Phishing Analysis
-- Web Application Security
-- Incident Response
-- Threat Intelligence
-- MITRE ATT&CK Framework
-
----
-
-## 🚧 Response Capabilities Demonstrated
-
-- Alert triage and prioritization
-- Threat validation
-- IOC analysis
-- Network investigation
-- Endpoint investigation
-- Phishing analysis
-- Malware investigation
-- False positive identification
-- Security incident reporting
-
----
-
-## ✅ Investigation Outcomes
-
-The investigations contained in this repository include:
-
-- Confirmed malicious activity (True Positive)
-- False Positive analysis
-- Benign activity validation
-- Threat intelligence correlation
-- Malware and phishing investigations
-
----
-
-## 🚀 Current Focus
-
-- Strengthening SOC Tier 1–2 skills
-- Improving detection accuracy
-- Expanding investigation methodologies
-- Enhancing MITRE ATT&CK knowledge
-- Building practical Blue Team experience
-- Developing structured investigation workflows
-
----
-
-## 🎯 Goal
-
-Build practical experience in:
-
-- Security Monitoring
-- Threat Detection
-- Incident Investigation
-- Malware Analysis
-- Phishing Analysis
-- Blue Team Operations
-
----
-
-⭐ Continuously improving cybersecurity and Blue Team capabilities through hands-on security investigations.
+⭐ Continuous development of SOC Analyst and Blue Team investigation skills through practical security investigations.
