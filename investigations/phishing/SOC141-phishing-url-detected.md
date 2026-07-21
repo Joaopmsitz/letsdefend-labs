@@ -10,9 +10,9 @@ A security alert was triggered after an internal user accessed a suspicious URL 
 
 | Field | Value |
 |---------|---------|
-| Incident ID | SOC141 |
-| Category | Phishing |
+| Alert ID | SOC141 |
 | Event ID | 86 |
+| Category | Phishing |
 | User | ellie |
 | Hostname | EmilyComp |
 | Source IP | 172.16.17.49 |
@@ -68,7 +68,7 @@ The activity indicates attempted payload delivery from attacker-controlled infra
 - Successful phishing URL access
 - Malicious command execution identified
 - Attempted payload retrieval from external infrastructure
-- Potential endpoint compromise
+- Likely endpoint compromise
 - Endpoint containment required to prevent further malicious activity
 
 ---
@@ -98,22 +98,22 @@ The activity indicates attempted payload delivery from attacker-controlled infra
 
 ## 🛠️ Response Actions
 
-- Incident classified as **True Positive**
-- Isolated affected endpoint
+- Classified alert as True Positive
+- Isolated the affected endpoint
 - Blocked malicious domains and IP addresses
 - Identified and removed malicious payloads
 - Recommended additional forensic analysis
-- Monitored environment for related indicators
+- Monitored the environment for related indicators
 
 ---
 
 ## 📚 Conclusion
 
-This incident represents a phishing attack in which a user accessed a malicious URL, leading to attempted code execution through the abuse of **rundll32.exe**.
+This investigation identified a phishing attack in which a user accessed a malicious URL, leading to attempted code execution through the abuse of **rundll32.exe**.
 
-The investigation identified suspicious command execution and attempted retrieval of the malicious payload **KBDYAK.exe** from attacker-controlled infrastructure.
+Analysis revealed suspicious command execution and attempted retrieval of the malicious payload **KBDYAK.exe** from attacker-controlled infrastructure.
 
-Based on the collected evidence, the incident was classified as a **True Positive** and required endpoint containment and additional investigation.
+Based on the collected evidence, the alert was classified as a **True Positive** and required endpoint containment and additional investigation.
 
 ### ✅ Final Verdict
 
