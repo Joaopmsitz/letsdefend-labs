@@ -11,6 +11,7 @@ These investigations focus on identifying malicious emails, phishing URLs, socia
 - SOC140 - Phishing Malicious Attachment
 - SOC141 - Phishing URL Detected
 - SOC282 - Phishing Deceptive Email
+- SOC338 - Lumma Stealer ClickFix Phishing
 
 ---
 
@@ -25,6 +26,8 @@ This section covers phishing techniques such as:
 - Credential harvesting attempts
 - Payload delivery mechanisms
 - Email-based malware distribution
+- ClickFix phishing attacks
+- PowerShell-based payload execution
 
 ---
 
@@ -66,6 +69,8 @@ Each phishing investigation may include:
 - Threat validation
 - User activity analysis
 - Malware delivery analysis
+- PowerShell investigation
+- Endpoint activity analysis
 - Security reporting
 
 ---
@@ -78,8 +83,10 @@ Investigations in this category include:
 - Phishing URLs
 - Payload delivery attempts
 - User interaction analysis
+- ClickFix phishing campaigns
+- Malware delivery techniques
 - Successful and unsuccessful attack attempts
 
 ---
 
-⭐ Continuous development of email security, phishing analysis, and Blue Team investigation skills.
+⭐ Continuous development of email security, phishing analysis, threat hunting, incident response, and Blue Team investigation skills.
