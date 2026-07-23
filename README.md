@@ -6,6 +6,13 @@ The reports document the analysis of security alerts, threat validation, evidenc
 
 ---
 
+## 👨‍💻 Analyst Profile
+
+- LetsDefend Profile: [JoaoPmsItz](https://app.letsdefend.io/user/JoaopmsItz)
+- GitHub Profile: https://github.com/Joaopmsitz
+
+---
+
 ## 🧠 Skills Demonstrated
 
 - SIEM alert investigation
@@ -18,6 +25,8 @@ The reports document the analysis of security alerts, threat validation, evidenc
 - IOC identification
 - MITRE ATT&CK mapping
 - Alert classification (True Positive / False Positive)
+- PowerShell investigation
+- Incident response workflows
 
 ---
 
@@ -59,6 +68,7 @@ Each investigation includes:
 - Malicious attachments
 - Social engineering attacks
 - Payload delivery investigations
+- ClickFix phishing campaigns
 
 ### 🌐 Web Attacks
 
@@ -69,4 +79,46 @@ Each investigation includes:
 
 ---
 
-⭐ Continuous development of SOC Analyst and Blue Team investigation skills through practical security investigations.
+## 📈 Current Investigations
+
+### 🎣 Phishing
+
+- SOC140 - Phishing Malicious Attachment
+- SOC141 - Phishing URL Detected
+- SOC282 - Phishing Deceptive Email
+- SOC338 - Lumma Stealer ClickFix Phishing
+
+### 🦠 Malware
+
+- SOC104 - Malware Detected
+- SOC138 - Suspicious XLS File
+
+### 🌐 Web Attacks
+
+- SOC165 - Possible SQL Injection Payload Detected
+- SOC166 - Javascript Code Detected in Requested URL
+
+---
+
+## 🎯 SOC Workflow
+
+- Alert Triage
+- Evidence Collection
+- IOC Analysis
+- Threat Validation
+- Threat Classification
+- MITRE ATT&CK Mapping
+- Incident Documentation
+- Response Recommendations
+
+---
+
+## 📚 Training Platform
+
+All investigations were performed in the Let's Defend SOC Analyst training environment:
+
+🔗 [View My LetsDefend Profile](https://app.letsdefend.io/user/JoaopmsItz)
+
+---
+
+⭐ Continuous development of SOC Analyst, Incident Response, Threat Detection, and Blue Team investigation skills through practical security investigations.
