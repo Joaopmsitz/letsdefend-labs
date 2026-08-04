@@ -1,8 +1,8 @@
 # 🛡️ SOC Analyst Portfolio - Let's Defend
 
-This repository contains security investigations performed during hands-on SOC Analyst training on the Let's Defend platform.
+This repository contains security investigations conducted during hands-on SOC Analyst training on the Let's Defend platform.
 
-The reports document the analysis of security alerts, threat validation, evidence collection, and final investigation outcomes.
+The investigations focus on alert triage, threat validation, incident analysis, IOC identification, and response activities.
 
 ---
 
@@ -19,19 +19,12 @@ The reports document the analysis of security alerts, threat validation, evidenc
 - Malware Analysis
 - Phishing Analysis
 - Web Attack Detection
-- Log Correlation
+- IOC Identification
 - Network Traffic Analysis
 - Threat Intelligence Validation
-- IOC Identification
-- MITRE ATT&CK Mapping
-- Alert Classification (True Positive / False Positive)
 - PowerShell Investigation
-- Incident Response Workflows
-- PowerShell Threat Analysis
-- Macro Malware Investigation
-- Sysmon Log Analysis
-- Malware IOC Analysis
-- Brute Force Investigation
+- MITRE ATT&CK Mapping
+- Incident Response
 
 ---
 
@@ -48,54 +41,22 @@ investigations/
 Each investigation includes:
 
 - Alert Details
-- Investigation Methodology
+- Investigation Process
 - Evidence Analysis
-- Indicators of Compromise (IOCs)
+- IOC Identification
 - MITRE ATT&CK Mapping
 - Response Actions
 - Final Verdict
 
 ---
 
-## 🧾 Investigation Categories
+## 📁 Investigations
 
 ### 🦠 Malware
 
-- Suspicious File Execution
-- Malware Validation
-- Sandbox Analysis
-- File Reputation Analysis
-- PowerShell Malware Activity
-- Malicious Office Macros
-- IOC Validation
-
-### 🎣 Phishing
-
-- Malicious Email Analysis
-- Phishing URLs
-- Malicious Attachments
-- Social Engineering Attacks
-- Payload Delivery Investigations
-- ClickFix Phishing Campaigns
-
-### 🌐 Web Attacks
-
-- SQL Injection Attempts
-- Cross-Site Scripting (XSS)
-- Malicious URL Analysis
-- HTTP Request Inspection
-
-### 🔐 Brute Force
-
-- Authentication Abuse
-- RDP Brute Force Attacks
-- Failed Login Analysis
-- Log Correlation
-- Threat Validation
-
----
-
-## 📈 Current Investigations
+- SOC104 - Malware Detected
+- SOC138 - Suspicious XLS File Execution
+- SOC205 - Malicious Macro Execution
 
 ### 🎣 Phishing
 
@@ -104,16 +65,10 @@ Each investigation includes:
 - SOC282 - Phishing Deceptive Email
 - SOC338 - Lumma Stealer ClickFix Phishing
 
-### 🦠 Malware
-
-- SOC104 - Malware Detected
-- SOC138 - Suspicious XLS File
-- SOC205 - Malicious Macro Execution
-
 ### 🌐 Web Attacks
 
 - SOC165 - Possible SQL Injection Payload Detected
-- SOC166 - Javascript Code Detected in Requested URL
+- SOC166 - JavaScript Code Detected in URL
 
 ### 🔐 Brute Force
 
@@ -121,26 +76,24 @@ Each investigation includes:
 
 ---
 
-## 🎯 SOC Workflow
+## 🎯 Investigation Workflow
 
-- Alert Triage
-- Evidence Collection
-- IOC Analysis
-- Threat Validation
-- Threat Classification
-- MITRE ATT&CK Mapping
-- Incident Documentation
-- Response Recommendations
-
----
-
-## 📚 Training Platform
-
-All investigations were performed in the Let's Defend SOC Analyst training environment.
-
-🔗 View My LetsDefend Profile:
-https://app.letsdefend.io/user/JoaopmsItz
+```text
+Detection
+   │
+   ▼
+Analysis
+   │
+   ▼
+Threat Validation
+   │
+   ▼
+Containment / Response
+   │
+   ▼
+Documentation
+```
 
 ---
 
-⭐ Continuous development of SOC Analyst, Incident Response, Threat Detection, and Blue Team investigation skills through practical security investigations.
+⭐ Continuous development of SOC Analyst, Threat Detection, Incident Response, and Blue Team investigation skills through practical security investigations.
