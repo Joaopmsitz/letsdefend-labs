@@ -2,7 +2,7 @@
 
 This repository contains security investigations performed during hands-on SOC Analyst training on the Let's Defend platform.
 
-The reports document alert triage, threat validation, evidence collection, incident investigation, containment actions, and final conclusions.
+The reports document the analysis of security alerts, threat validation, evidence collection, and final investigation outcomes.
 
 ---
 
@@ -57,25 +57,9 @@ Each investigation includes:
 
 ---
 
-## 📊 Investigation Statistics
+## 🧾 Investigation Categories
 
-| Category | Investigations |
-|-----------|-----------|
-| Malware | 3 |
-| Phishing | 4 |
-| Web Attacks | 2 |
-| Brute Force | 1 |
-| Total | 10 |
-
----
-
-## 🦠 Malware
-
-- SOC104 - Malware Detected
-- SOC138 - Suspicious XLS File
-- SOC205 - Malicious Macro Execution
-
-### Topics Covered
+### 🦠 Malware
 
 - Suspicious File Execution
 - Malware Validation
@@ -85,51 +69,55 @@ Each investigation includes:
 - Malicious Office Macros
 - IOC Validation
 
----
-
-## 🎣 Phishing
-
-- SOC140 - Phishing Malicious Attachment
-- SOC141 - Phishing URL Detected
-- SOC282 - Phishing Deceptive Email
-- SOC338 - Lumma Stealer ClickFix Phishing
-
-### Topics Covered
+### 🎣 Phishing
 
 - Malicious Email Analysis
 - Phishing URLs
 - Malicious Attachments
-- Social Engineering
-- Payload Delivery
-- ClickFix Campaigns
+- Social Engineering Attacks
+- Payload Delivery Investigations
+- ClickFix Phishing Campaigns
 
----
-
-## 🌐 Web Attacks
-
-- SOC165 - Possible SQL Injection Payload Detected
-- SOC166 - JavaScript Code Detected in Requested URL
-
-### Topics Covered
+### 🌐 Web Attacks
 
 - SQL Injection Attempts
 - Cross-Site Scripting (XSS)
 - Malicious URL Analysis
 - HTTP Request Inspection
 
+### 🔐 Brute Force
+
+- Authentication Abuse
+- RDP Brute Force Attacks
+- Failed Login Analysis
+- Log Correlation
+- Threat Validation
+
 ---
 
-## 🔐 Brute Force
+## 📈 Current Investigations
 
-- SOC176 - RDP Brute Force Detected
+### 🎣 Phishing
 
-### Topics Covered
+- SOC140 - Phishing Malicious Attachment
+- SOC141 - Phishing URL Detected
+- SOC282 - Phishing Deceptive Email
+- SOC338 - Lumma Stealer ClickFix Phishing
 
-- Failed Authentication Analysis
-- RDP Investigation
-- Log Correlation
-- IOC Identification
-- Threat Validation
+### 🦠 Malware
+
+- SOC104 - Malware Detected
+- SOC138 - Suspicious XLS File
+- SOC205 - Malicious Macro Execution
+
+### 🌐 Web Attacks
+
+- SOC165 - Possible SQL Injection Payload Detected
+- SOC166 - Javascript Code Detected in Requested URL
+
+### 🔐 Brute Force
+
+- SOC176 - RDP Brute Force Detection
 
 ---
 
@@ -142,7 +130,6 @@ Each investigation includes:
 - Threat Classification
 - MITRE ATT&CK Mapping
 - Incident Documentation
-- Incident Containment
 - Response Recommendations
 
 ---
@@ -156,18 +143,4 @@ https://app.letsdefend.io/user/JoaopmsItz
 
 ---
 
-## 🚀 Career Focus
-
-This portfolio demonstrates practical experience in:
-
-- SOC Operations
-- Incident Response
-- Threat Detection
-- Malware Analysis
-- Threat Hunting
-- Blue Team Operations
-- Security Monitoring
-
----
-
-⭐ Continuously developing SOC Analyst, Incident Response, Threat Detection, and Blue Team investigation skills through hands-on security investigations.
+⭐ Continuous development of SOC Analyst, Incident Response, Threat Detection, and Blue Team investigation skills through practical security investigations.
