@@ -62,6 +62,7 @@ Each investigation includes:
 
 - SOC140 - Phishing Malicious Attachment
 - SOC141 - Phishing URL Detected
+- SOC146 - Phishing Mail Detected - Excel 4.0 Macros
 - SOC282 - Phishing Deceptive Email
 - SOC338 - Lumma Stealer ClickFix Phishing
 
