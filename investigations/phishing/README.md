@@ -2,7 +2,7 @@
 
 This directory contains phishing-related security investigations performed during hands-on SOC Analyst training on the Let's Defend platform.
 
-These investigations focus on identifying malicious emails, phishing URLs, social engineering techniques, malicious attachments, and payload delivery attempts.
+These investigations focus on malicious emails, phishing URLs, social engineering techniques, malicious attachments, and payload delivery attempts.
 
 ---
 
@@ -10,83 +10,53 @@ These investigations focus on identifying malicious emails, phishing URLs, socia
 
 - SOC140 - Phishing Malicious Attachment
 - SOC141 - Phishing URL Detected
+- SOC146 - Phishing Mail Detected - Excel 4.0 Macros
 - SOC282 - Phishing Deceptive Email
 - SOC338 - Lumma Stealer ClickFix Phishing
 
 ---
 
-## 🎯 Attack Types Analyzed
+## 🎯 Investigation Areas
 
-This section covers phishing techniques such as:
-
-- Malicious email campaigns
-- Social engineering attempts
-- Malicious attachments
-- Phishing URLs
-- Credential harvesting attempts
-- Payload delivery mechanisms
-- Email-based malware distribution
-- ClickFix phishing attacks
-- PowerShell-based payload execution
-
----
-
-## 🔍 Investigation Focus
-
-Each phishing investigation may include:
-
-- Email header analysis
-- Sender reputation validation
-- Attachment analysis
-- URL reputation analysis
-- Sandbox analysis
-- IOC identification
-- Network activity review
-- User interaction analysis
-- Impact assessment
+- Email Header Analysis
+- Sender Reputation Validation
+- Attachment Analysis
+- URL Analysis
+- Sandbox Analysis
+- Social Engineering Identification
+- IOC Identification
+- Malware Delivery Analysis
+- User Interaction Analysis
+- Threat Validation
 
 ---
 
 ## 🧠 SOC Workflow Applied
 
-- Alert triage
-- Evidence collection
-- Email analysis
-- Link and attachment inspection
-- Threat intelligence validation
-- Threat classification
-- MITRE ATT&CK mapping
-- Response recommendations
+- Alert Triage
+- Evidence Collection
+- Email Analysis
+- Attachment and URL Inspection
+- Threat Intelligence Validation
+- MITRE ATT&CK Mapping
+- Threat Classification
+- Incident Response
+- Final Reporting
 
 ---
 
 ## 🎯 Skills Demonstrated
 
-- Phishing detection
-- Email security analysis
-- Social engineering identification
-- IOC extraction
-- Threat validation
-- User activity analysis
-- Malware delivery analysis
-- PowerShell investigation
-- Endpoint activity analysis
-- Security reporting
+- Phishing Detection
+- Email Security Analysis
+- Social Engineering Identification
+- IOC Extraction
+- Threat Validation
+- Malware Delivery Analysis
+- Endpoint Investigation
+- PowerShell Investigation
+- Security Reporting
 
 ---
 
-## ✅ Investigation Outcomes
-
-Investigations in this category include:
-
-- Malicious phishing emails
-- Phishing URLs
-- Payload delivery attempts
-- User interaction analysis
-- ClickFix phishing campaigns
-- Malware delivery techniques
-- Successful and unsuccessful attack attempts
-
----
-
-⭐ Continuous development of email security, phishing analysis, threat hunting, incident response, and Blue Team investigation skills.
+⭐ Practical phishing investigation experience developed through real-world email security incidents, malicious attachments, credential harvesting attempts, malware delivery campaigns, and user-focused attack scenarios.
